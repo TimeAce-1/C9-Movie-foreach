@@ -31,6 +31,21 @@ public class Main
         Movie[][] mB = { {moana, frozen, bh6}, {spirit, howel, ponyo, marnie}, { april, kubo, anastasia, spider}};
         ArrayList<Movie> mC = new ArrayList<Movie>( Arrays.asList(mA));
         
+        for (Movie m : mA)
+        {
+            System.out.println(m.getName());
+        }
+        for (Movie m2 : mC)
+        {
+            System.out.println(m2.getName());
+        }
+        for (Movie[] m3 : mB)
+            {
+                for (Movie m4 : m3)
+                {
+                    System.out.println(m4.getName());
+                }
+            }
     }// END psvm
         
 } // END class Main
